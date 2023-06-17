@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="box">
+      <h1>
+        Generate a <br />
+        <span>random password</span>
+      </h1>
+      <p>Never use an insecure password again.</p>
+      <div class="controls">
+        <div class="label">
+          <label for="password-length">Password Length:</label>
+          <input type="number" id="password-length" value="15" />
+        </div>
+        <br />
+        <label for="include-symbols">Include Symbols:</label>
+        <input type="checkbox" id="include-symbols" checked />
+        <br />
+        <label for="include-numbers">Include Numbers:</label>
+        <input type="checkbox" id="include-numbers" checked />
+        <br />
+      </div>
+      <button id="generatePassword" onclick="generatePassword()">
+        Generate password
+      </button>
+      <button id="regeneratePassword" onclick="regeneratePassword()">
+        Regenerate password
+      </button>
+      <hr />
+      <div class="box-two">
+        <div id="password-one">
+          <p></p>
+        </div>
+        <div id="password-two">
+          <p></p>
+        </div>
+      </div>
+      <button class="button" onclick="copyPassword()">Copy</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
